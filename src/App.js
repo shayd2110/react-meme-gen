@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/*eslint-disable */
+import React, { Component, useState, useEffect } from "react";
+import MemeHeader from "./components/MemeHeader";
+import MemeGenerator from "./components/MemeGenerator";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//#region MEME Generator
+class App extends React.Component {
+	render() {
+		return (
+			<div>
+				<MemeHeader />
+				<MemeGenerator />
+			</div>
+		);
+	}
 }
-
+//#endregion
 export default App;
